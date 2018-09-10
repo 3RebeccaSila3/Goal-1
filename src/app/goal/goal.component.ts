@@ -16,6 +16,12 @@ export class GoalComponent implements OnInit {
     new Goal(6, 'Plot my world domination plan','Cause I am an evil overlord'),
 ]
 
+completeGoal(isComplete,index){
+  if (isComplete){
+    this.goals.splice(index,1)
+  }
+}
+
 toogleDetails(index){
   this.goals[index].showDescription = !this.goals[index].showDescription;
 }
