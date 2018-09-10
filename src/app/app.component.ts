@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `
-  `
+  templateUrl: './app.component.html'
+
 })
 export class AppComponent {
-  title = 'app';
+  goals: string[];
+
+constructor(){
+
+  this.goals = ["Watch Finding Nemo", "Buy Cookies", "Get new phone case"];
+  }
 }
